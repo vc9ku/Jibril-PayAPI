@@ -36,6 +36,14 @@ nav a {
   margin-right: 64px;
 }
 
+.schedule-demo-button {
+  background-color: #ba4270;
+  padding: 16px 24px 14px 26px;
+  border-radius: 24px;
+  color: #fbfcfe;
+  margin-left: auto;
+}
+
 main {
   width: 90%;
   margin-right: auto;
@@ -46,7 +54,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
 }
 
 main h1 {
@@ -54,14 +61,65 @@ main h1 {
   font-weight: 400;
   font-size: 32px;
   line-height: 36px;
-  color: #36536B;
+  color: #36536b;
+  margin-bottom: 24px;
+  text-align: center;
 }
-
 
 .phone-illustration {
-  width: 100%;
+  /* width: 55%; */
+  margin: auto;
+  height: 240px;
 }
 
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.schedule-demo-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Public Sans", serif;
+  font-size: 15px;
+  line-height: 17.63px;
+  margin-bottom: 16px;
+}
+
+form input {
+  margin-bottom: 16px;
+  font-weight: 700;
+  padding: 16px 158px 14px 27px;
+  border-radius: 24px;
+  border: solid transparent;
+  color: #36536b;
+  opacity: 50%;
+  background-color: #fbfcfe;
+  box-shadow: 2px 3px 3px 2px;
+}
+
+form button {
+  padding: 16px 46px 14px 50px;
+  border-radius: 24px;
+  border: solid transparent;
+  background-color: #ba4270;
+  font-weight: 700;
+  color: #fbfcfe;
+}
+
+.main-wrapper p {
+  font-family: "Public Sans", serif;
+  color: #6c8294;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.63px;
+}
+.main-wrapper span {
+  font-weight: 700;
+}
 
 @media screen and (min-width: 768px) {
   nav {
@@ -93,21 +151,88 @@ main h1 {
   .logo {
     margin-right: 64px;
   }
-  
 
-  @media screen and (min-width: 1024px) {
-    header {
-      width: 80%;
-      max-width: 1110px;
-      justify-content: normal;
-    }
+  main {
+    width: 80%;
+  }
 
-    nav {
-      width: 100%;
-    }
+  .phone-illustration {
+    height: 300px;
+  }
 
-    .schedule-demo-button {
-      margin-left: auto;
-    }
+  .schedule-demo-form {
+    flex-direction: row;
+  }
+
+  .main-wrapper h1 {
+    font-size: 48px;
+    line-height: 56px;
+    flex-direction: column-reverse;
+  }
+
+  form input {
+    margin-bottom: 0;
+  }
+
+  .schedule-demo-form {
+    position: relative;
+  }
+
+  form button {
+    position: absolute;
+    right: 64px;
+  }
+
+  .schedule-demo-form input {
+    padding-right: 326px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80%;
+    max-width: 1110px;
+    justify-content: normal;
+    margin-bottom: 54px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .phone-illustration {
+    height: 500px;
+  }
+
+  .schedule-demo-button {
+    margin-left: auto;
+  }
+
+  .schedule-demo-form {
+    position: relative;
+  }
+
+  .schedule-demo-form input {
+    width: 753px;
+  }
+
+  .main-wrapper h1 {
+    text-align: left;
+    font-size: 72px;
+    margin-bottom: 26px;
+    line-height: 72px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form button {
+    position: absolute;
+    right: 104px;
+    top: 0;
   }
 }

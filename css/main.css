@@ -135,6 +135,7 @@ form button {
 
   header {
     justify-content: normal;
+    margin-bottom: 48px;
   }
 
   nav ul {
@@ -158,6 +159,7 @@ form button {
 
   .phone-illustration {
     height: 300px;
+    margin-bottom: 48px;
   }
 
   .schedule-demo-form {
@@ -168,6 +170,7 @@ form button {
     font-size: 48px;
     line-height: 56px;
     flex-direction: column-reverse;
+    margin-bottom: 22px;
   }
 
   form input {

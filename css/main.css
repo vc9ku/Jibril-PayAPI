@@ -127,6 +127,7 @@ form button {
 
 .partners-section {
   background-color: #1b262f;
+  margin-bottom: 80px;
 }
 
 .article-wrapper {
@@ -158,7 +159,7 @@ form button {
 
 .more-info {
   text-align: center;
-  color: #FBFCFE;
+  color: #fbfcfe;
 }
 
 .more-info h2 {
@@ -170,7 +171,8 @@ form button {
   font-family: "DM Serif Display", serif;
 }
 
-.more-info p, a {
+.more-info p,
+a {
   font-family: "Public Sans", serif;
 }
 
@@ -185,16 +187,83 @@ form button {
 .more-info a {
   text-decoration: none;
   padding: 16px 32px 16px 32px;
-  border: solid 1px #FBFCFE;
+  border: solid 1px #fbfcfe;
   border-radius: 24px;
-  color: #FBFCFE;
+  color: #fbfcfe;
 }
 
-.features-section {
+.first-features-section,
+.second-features-section {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   margin-bottom: 80px;
+}
+
+.first-features-section h2 {
+  color: #36536b;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: -0.28px;
+  margin-bottom: 24px;
+}
+
+.second-features-section h2 {
+  color: #36536b;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: -0.28px;
+  margin-bottom: 24px;
+}
+
+.second-features-section,
+.first-features-section p {
+  color: #6c8294;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Public Sans", serif;
+}
+
+.terminal,
+.illustration-simple-ui {
+  margin-bottom: 48px;
+}
+
+.advantages-section {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.advantages-image {
+  margin-bottom: 32px;
+}
+
+.advantages-title {
+  font-family: "Public Sans", serif;
+  color: #36536b;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.14px;
+  margin-bottom: 16px;
+}
+
+.advantage-paragraph {
+  color: #6c8294;
+  font-family: "Public Sans", serif;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.12px;
+  margin-bottom: 48px;
 }
 
 @media screen and (min-width: 768px) {
@@ -266,6 +335,15 @@ form button {
     max-width: 536px;
   }
 
+  .first-features-section,
+  .second-features-section {
+    width: 80%;
+  }
+
+  .advantages-section {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -330,5 +408,41 @@ form button {
     font-size: 48px;
     line-height: 56px;
     line-height: -0.37px;
+  }
+
+  .first-features-section,
+  .second-features-section {
+    width: 70%;
+  }
+
+  .first-features-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .second-features-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .first-features-content,
+  .second-features-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 33%;
+  }
+
+  .easy-to-implement-title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .second-features-content h2 {
+    font-size: 48px;
+    line-height: 56px;
   }
 }

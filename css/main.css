@@ -16,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 nav {
@@ -44,16 +45,11 @@ nav a {
   margin-left: auto;
 }
 
-main {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .phone-picture {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 main h1 {
@@ -64,6 +60,13 @@ main h1 {
   color: #36536b;
   margin-bottom: 24px;
   text-align: center;
+}
+
+.hero-section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
 }
 
 .phone-illustration {
@@ -86,7 +89,6 @@ main h1 {
   font-family: "Public Sans", serif;
   font-size: 15px;
   line-height: 17.63px;
-  margin-bottom: 16px;
 }
 
 form input {
@@ -112,13 +114,87 @@ form button {
 
 .main-wrapper p {
   font-family: "Public Sans", serif;
+  margin-top: 16px;
   color: #6c8294;
   font-weight: 400;
   font-size: 15px;
   line-height: 17.63px;
+  margin-bottom: 80px;
 }
 .main-wrapper span {
   font-weight: 700;
+}
+
+.partners-section {
+  background-color: #1b262f;
+}
+
+.article-wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1100px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.logo-spacing {
+  margin-bottom: 40px;
+}
+
+.more-info {
+  text-align: center;
+  color: #FBFCFE;
+}
+
+.more-info h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.25px;
+  margin-bottom: 16px;
+  font-family: "DM Serif Display", serif;
+}
+
+.more-info p, a {
+  font-family: "Public Sans", serif;
+}
+
+.more-info p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  opacity: 70%;
+  margin-bottom: 32px;
+}
+
+.more-info a {
+  text-decoration: none;
+  padding: 16px 32px 16px 32px;
+  border: solid 1px #FBFCFE;
+  border-radius: 24px;
+  color: #FBFCFE;
+}
+
+.features-section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
 }
 
 @media screen and (min-width: 768px) {
@@ -153,10 +229,6 @@ form button {
     margin-right: 64px;
   }
 
-  main {
-    width: 80%;
-  }
-
   .phone-illustration {
     height: 300px;
     margin-bottom: 48px;
@@ -189,12 +261,17 @@ form button {
   .schedule-demo-form input {
     padding-right: 326px;
   }
+
+  .logo-wrapper {
+    max-width: 536px;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
   header {
-    width: 80%;
-    max-width: 1110px;
+    width: 90%;
+    max-width: 1100px;
     justify-content: normal;
     margin-bottom: 54px;
   }
@@ -216,7 +293,7 @@ form button {
   }
 
   .schedule-demo-form input {
-    width: 753px;
+    width: 657px;
   }
 
   .main-wrapper h1 {
@@ -237,5 +314,21 @@ form button {
     position: absolute;
     right: 104px;
     top: 0;
+  }
+
+  .article-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .more-info {
+    text-align: left;
+    max-width: 445px;
+  }
+
+  .more-info h1 {
+    font-size: 48px;
+    line-height: 56px;
+    line-height: -0.37px;
   }
 }

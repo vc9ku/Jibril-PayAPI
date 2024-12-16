@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edf3f8;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.pricing-plan-section {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.plan h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    color: #BA4270;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.43px;
+    color: #36536B;
+    text-align: center;
+}
+
+.plan-wrapper li {
+    font-family: "Public Sans", sans-serif;
+    color: #36536B;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.plan-wrapper p {
+    font-family: "Public Sans", sans-serif;
+    color: #36536B;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.low-opacity-feature {
+    opacity: 50%;
+}
+
+.plan-wrapper a {
+    color: #36536B;
+    font-weight: 14px;
+    line-height: 17.63px;
+    font-family: "Public Sans", sans-serif;
+    text-decoration: none;
+    border: solid 1px #36536B;
+    padding: 16px 28px 14px 28px;
+    border-radius: 24px;
+}

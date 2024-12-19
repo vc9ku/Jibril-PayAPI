@@ -5,126 +5,139 @@
 }
 
 body {
-    background-color: #edf3f8;
+  background-color: #edf3f8;
 }
 
 h1 {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: -0.25px;
-    text-align: center;
-    margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.25px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .pricing-plan-section {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
 }
 
 .plan-wrapper {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .plan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 48px;
+  width: 100%;
 }
 
 .plan h2 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    color: #BA4270;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.18px;
-    text-align: center;
-    margin-bottom: 80px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: #ba4270;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .plan h3 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 72px;
-    letter-spacing: -0.43px;
-    color: #36536B;
-    text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.43px;
+  color: #36536b;
+  text-align: center;
 }
 
 .plan-wrapper li {
-    font-family: "Public Sans", sans-serif;
-    color: #36536B;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+  font-family: "Public Sans", sans-serif;
+  color: #36536b;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .plan-wrapper p {
-    font-family: "Public Sans", sans-serif;
-    color: #36536B;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+  font-family: "Public Sans", sans-serif;
+  color: #36536b;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .low-opacity-feature {
-    opacity: 50%;
-    margin-left: 36px;
+  opacity: 50%;
+  margin-left: 36px;
 }
 
 .plan-wrapper a {
-    color: #36536B;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 17.63px;
-    font-family: "Public Sans", sans-serif;
-    text-decoration: none;
-    border: solid 1px #36536B;
-    padding: 16px 28px 14px 28px;
-    border-radius: 24px;
+  color: #36536b;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17.63px;
+  font-family: "Public Sans", sans-serif;
+  text-decoration: none;
+  border: solid 1px #36536b;
+  padding: 16px 28px 14px 28px;
+  border-radius: 24px;
 }
 
 hr {
-    border: solid 1px #36536B;
-    width: 100%;
-    opacity: 25%;
-    margin-top: 24px;
-    margin-bottom: 24px;
+  border: solid 1px #36536b;
+  width: 100%;
+  opacity: 25%;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .check-box {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
-
 @media screen and (min-width: 768px) {
-    .plan-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
+  .plan-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
 
-    .plan {
-        width: 33%;
-    }
-    
-    hr {
-        width: 80%;
-    }
+  .plan {
+    width: 33%;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .pricing-plan-section h1 {
+    font-size: 48px;
+  }
+  
+  .plan-spacer {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .pricing-plan-section h1 {
-        
-    }
+  .pricing-plan-section h1 {
+    font-size: 56px;
+  }
 }

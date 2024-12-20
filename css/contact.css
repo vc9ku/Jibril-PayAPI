@@ -1,0 +1,35 @@
+.contact-section {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.contact-form input {
+    border: none;
+    background-color: #edf3f8;
+    font-family: "Public Sans", sans-serif;
+    color: #36536B;
+    opacity: 50%;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+    border-bottom: solid 1px #36536B;
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.announcements-confirmation-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-spacer {
+    margin-bottom: 24px;
+}

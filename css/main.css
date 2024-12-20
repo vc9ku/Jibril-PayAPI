@@ -92,7 +92,7 @@ main h1 {
   line-height: 17.63px;
 }
 
-form input {
+.main-wrapper-form {
   margin-bottom: 16px;
   font-weight: 700;
   padding: 16px 158px 14px 27px;

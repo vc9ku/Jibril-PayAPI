@@ -104,7 +104,7 @@ form input {
   box-shadow: 2px 3px 3px 2px;
 }
 
-form button {
+.main-schedule-button {
   padding: 16px 46px 14px 50px;
   border-radius: 24px;
   border: solid transparent;
@@ -267,6 +267,107 @@ a {
   margin-bottom: 48px;
 }
 
+.start-now {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start-now h2 {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.25px;
+  color: #36536b;
+  margin-bottom: 32px;
+}
+
+.start-now-form-input {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 28px;
+  border-radius: 24px;
+  border: solid transparent;
+  color: #36536b;
+  background-color: #fbfcfe;
+  box-shadow: 2px 3px 3px 2px;
+  font-family: "Public Sans", serif;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.start-now-form button {
+  font-family: "Public Sans", serif;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 24px;
+  border: solid transparent;
+  background-color: #ba4270;
+  font-weight: 700;
+  color: #fbfcfe;
+  font-size: 14px;
+  line-height: 17.63px;
+  width: 100%;
+}
+
+footer {
+  background-color: #1b262f;
+  padding-top: 48px;
+}
+
+.footer-logo {
+  margin-bottom: 48px;
+}
+
+.footer-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fbfcfe;
+  opacity: 70%;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17.63px;
+}
+
+.footer-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.media-spacing {
+  margin-right: 24px;
+}
+
+.footer-spacing {
+  margin-bottom: 32px;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     display: flex;
@@ -315,7 +416,7 @@ a {
     margin-bottom: 22px;
   }
 
-  form input {
+  .main-wrapper-form {
     margin-bottom: 0;
   }
 
@@ -323,12 +424,12 @@ a {
     position: relative;
   }
 
-  form button {
+  .main-schedule-button {
     position: absolute;
     right: 64px;
   }
 
-  .schedule-demo-form input {
+  .main-wrapper-form {
     padding-right: 326px;
   }
 
@@ -340,10 +441,80 @@ a {
   .second-features-section {
     width: 80%;
   }
+  .easy-to-implement-title,
+  .simple-ui-ux-title {
+    font-size: 48px;
+  }
+
+  .advantages-part {
+    width: 30%;
+  }
 
   .advantages-section {
     display: flex;
     justify-content: space-between;
+  }
+
+  .start-now {
+    width: 60%;
+  }
+
+  .start-now-form {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .start-now-form-input {
+    /* max-width: 445px; */
+  }
+
+  .start-now-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: unset;
+    display: inline-block;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .footer-links {
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  .footer-spacing {
+    margin-right: 40px;
+  }
+
+  .footer-media {
+    padding-bottom: 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+    margin-right: 64px;
+  }
+  .footer-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -371,7 +542,7 @@ a {
     position: relative;
   }
 
-  .schedule-demo-form input {
+  .main-wrapper-form {
     width: 657px;
   }
 
@@ -389,7 +560,7 @@ a {
     align-items: center;
   }
 
-  form button {
+  .main-schedule-button {
     position: absolute;
     right: 104px;
     top: 0;
@@ -416,15 +587,19 @@ a {
     width: 70%;
   }
 
+  .logo-wrapper {
+    margin: 0;
+  }
+
   .first-features-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
   }
   .second-features-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
   }
@@ -445,5 +620,13 @@ a {
   .second-features-content h2 {
     font-size: 48px;
     line-height: 56px;
+  }
+
+  .advantages-section {
+    width: 70%;
+  }
+
+  .advantages-part {
+    width: 30%;
   }
 }
